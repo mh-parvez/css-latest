@@ -1,0 +1,68 @@
+
+/*CONTAINER QUERY LENGTH UNITS
+  cqw - query container's width
+  cqh - query container's height
+  cqi - query container's inline size
+  cqb - query container's block size
+  cqmin - query container's minimum size
+  cqmax - query container's maximun size
+*/
+
+.container {
+  padding: 1em;
+  background: greenyellow;
+  border: 1px solid rgba(155, 145, 4, 0.445);
+  outline: 1px dashed rgb(4, 155, 80);
+  outline-offset: 5px;
+  border-radius: .6em;
+  margin: 30px auto;
+  transition: all .5s;
+
+  width: 80%;
+  /* aspect-ratio: 2 / 1; */
+
+  /* container-name: details-Card; */
+  /* container-type: inline-size; */
+  /* container-type: size; */
+  container: details-Card / inline-size;
+  /* sort hand */
+}
+
+@container details-Card (max-width: 500px) {
+
+  h2 {
+    text-align: center;
+    text-decoration: underline wavy rgb(4, 155, 80);
+    text-underline-offset: .5em;
+
+    font-size: 10cqw;
+    font-size: 10cqi;
+    font-size: 10cqh;
+    font-size: 10cqb;
+    font-size: 10cqmin;
+    font-size: 10cqmax;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+/* @container details-Card (max-height: 200px) {
+
+  h2 {
+    text-align: center;
+    text-decoration: underline wavy rgb(4, 155, 80);
+    text-underline-offset: .5em;
+  }
+
+  p {
+    text-align: center;
+  }
+} */
+
+@container details-Card (max-width > 500px) and (max-height > 200px) {}
+
+@container details-Card (max-width > 500px) or (max-height > 200px) {}
+
+@container details-Card not (max-width > 500px) {}

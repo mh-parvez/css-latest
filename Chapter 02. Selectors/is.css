@@ -1,0 +1,21 @@
+
+/* without :is() */
+.test1 h1,
+.test1 h2,
+.test1 p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* with :is() */
+.test1 :is(h1, h2, p) {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* only test1 & test2 - h1 */
+:is(.test1, .test2) h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+:is(.test1, .test2) :is(h1, p) {
+  font-family: 'Courier New', Courier, monospace;
+}

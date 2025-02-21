@@ -1,0 +1,72 @@
+
+/*FLEX-PROPERTIES
+
+  🔹 display: flex;
+
+  🔹 flex-direction: row / row-reverse / column / column-reverse;
+  🔹 flex-wrap: nowrap / wrap / wrap-reverse;
+  🔸 flex-flow: direction wrap; [short-hand]
+
+  🔹 flex-grow: number; [use with child]
+  🔹 flex-basis: units; [use with child, max-width]
+  🔹 flex-shrink: number; [use with child]
+  🔸 flex: grow shrink basis; [short-hand]
+
+  🔹 justify-content: flex-start / flex-end / center / space-around / space-evenly / space-between;
+  🔹 align-items: stretch / flex-start / flex-end / center / baseline / last baseline;
+  🔹 align-content: stretch / flex-start / flex-end / center / space-around / space-evenly / space-between; [when multiple row]
+  🔹 align-self: auto / flex-start / flex-end / center / stretch / baseline; [use with child]
+
+  🔹 order: order-number;
+  🔹 gap: units;
+  🔹 margin: auto; [usefull for centering single element or floating elements]
+*/
+
+body {
+  font-family: century;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  padding: .5em;
+
+  border: 1px solid rgba(13, 14, 13, 0.39);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: first baseline;
+
+  gap: .4em;
+
+  .item {
+    /* width: 200px; */
+    height: 80px;
+    padding-inline: .5em;
+
+    font-size: 1.3em;
+    background: rgba(6, 139, 61);
+    color: #ffff;
+
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .item-4 {
+    /* font-size: 4rem; */
+    align-self: baseline;
+    order: -1;
+    /* flex-grow: 6; */
+    flex-basis: 200px;
+  }
+
+  .item-5 {
+    flex-grow: 0;
+  }
+}

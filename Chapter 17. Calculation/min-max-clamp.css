@@ -1,0 +1,37 @@
+
+/*MIN(), MAX(), CLAMP() - use with height, width, padding, margin
+
+width: min(50%, 500px);
+browser vw 600px > 900px * 50% = 450px
+browser vw 600px > 1200px * 50% = 600px
+
+width: max(50%, 500px);
+browser vw 600px > 900px * 50% = 450px
+browser vw 600px > 1200px * 50% = 600px
+
+clamp(min, value, max);
+width: clamp(350px, 50%, 500px);
+brwoser vw 700px to 1000px > 900px * 50% = 450px
+brwoser vw 700px to 1000px > 1200px * 50% = 600px
+brwoser vw 700px to 1000px > 600px * 50% = 300px
+*/
+
+#contianer {
+  background: rgb(233, 231, 230);
+  /* width: min(50%, 250px); */
+  /* width: max(70%, 500px); */
+  width: clamp(300px, 70%, 500px);
+
+  font-size: clamp(16px, 5vw, 50px);
+}
+
+.parent {
+  background-color: rgb(77, 121, 160);
+  /* width: 600px; */
+
+  .child {
+    background: rgb(233, 231, 230);
+    /* width: min(50%, 250px); */
+    width: max(70%, 500px);
+  }
+}

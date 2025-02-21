@@ -1,0 +1,47 @@
+
+/*HREF-PESUDO-CLASS
+  :link
+  :hover
+  :visited
+  :active
+  :target
+  
+*/
+
+nav>a:link {
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(8, 106, 59, 0.881);
+  }
+}
+
+nav>a:visited {
+  background-color: goldenrod;
+}
+
+nav>a:active {
+  color: rgb(251, 180, 0);
+}
+
+/* HTML-CODE
+<div class="tab-container">
+	<ul>
+		<li><a href="#html">HTML </a></li>
+		<li><a href="#css">CSS </a></li>
+		<li><a href="#javascript">JAVASCRIPT</a></li>
+	</ul>
+
+	<p id="html"> HTML Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	<p id="css"> CSS Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	<p id="javascript"> JAVASCRIPT Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+</div>
+*/
+
+p {
+  display: none;
+
+  &:target {
+    display: block;
+  }
+}

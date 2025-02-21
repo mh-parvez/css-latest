@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: roboto-medium;
+  src: url('./roboto-fonts/Roboto_SemiCondensed-Medium.ttf');
+}
+
+.content {
+  font-family: roboto-medium;
+}

@@ -1,0 +1,9 @@
+
+/* control the seclection */
+
+.container {
+  user-select: auto;
+  user-select: none;
+  user-select: text;
+  user-select: all;
+}

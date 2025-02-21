@@ -1,0 +1,31 @@
+
+div {
+  border: 1px solid;
+
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+
+  /* margin: 100px; */
+  /* margin: 100px 50px; */
+  /* margin: 30px 30px 30px 30px; */
+
+  /* margin-inline: 50px; */
+  /* margin-inline: 50px 10px; */
+  /* margin-inline-start: 40px; */
+  /* margin-inline-end: 40px; */
+
+  /* margin-block: 10px; */
+  /* margin-block: 10px 60px; */
+  /* margin-block-start: 40px; */
+  /* margin-block-end: 40px; */
+
+  p {
+    background: #eee;
+  }
+
+  h2 {
+    background: #eeeeee;
+  }
+}

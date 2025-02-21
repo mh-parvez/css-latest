@@ -1,0 +1,37 @@
+/* 
+The @supports rules in CSS (also called CSS Feature Queries) allows you to apply styles only, if a browser supports a specific CSS proprty or feature. 
+@supports (supports-condition) { css code }
+*/
+
+/* browser which is support grid */
+@supports (display: grid) {
+  .container {
+    display: grid;
+  }
+}
+
+/* browser which is not support grid, but flex */
+.container {
+  display: flex;
+}
+
+/* browser which is not support grid */
+@supports not (display: grid) {
+  .container {
+    display: grid;
+  }
+}
+
+/* multiple condition using or */
+@supports (display: flex) or (display: -webkit-flex) {
+  .container {
+    display: flex;
+  }
+}
+
+/* multiple condition using and */
+@supports (display: flex) and (display: -webkit-flex) {
+  .container {
+    display: flex;
+  }
+}

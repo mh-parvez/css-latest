@@ -1,0 +1,54 @@
+/*BACKGROUND-PROPERTIES
+  > backgorund-image
+  > background-repeat
+  > background-position
+  > background-attachment
+  > background-size
+  > background-origin
+  > background-clip
+  > background
+*/
+
+.content {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  padding: 1rem;
+
+  overflow: auto;
+
+  border: 20px solid rgba(0, 128, 0, 0.377);
+  background-color: rgb(34, 141, 235);
+  
+  background-image: url(./images/banner.png);
+
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round;
+  background-repeat: no-repeat;
+
+  background-position: right center;
+  background-position: 400px 200px;
+  background-position: 100% 100%;
+
+  background: url(./images/banner.png) no-repeat center center; /* short-hand */
+
+  background-attachment: fixed;
+  background-attachment: scroll;
+
+  background-size: 100% 400px;
+  background-size: 100% 100%;
+  background-size: contain;
+  background-size: cover;
+
+  background-origin: content-box;
+  background-origin: padding-box;
+  background-origin: border-box;
+
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+  background-clip: text;
+}

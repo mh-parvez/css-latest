@@ -1,0 +1,19 @@
+
+/*PRIORITY-LEVEL
+  first: inline-style
+  second: #id
+  third: .class-name
+  fourth: tag-name
+*/
+
+h1 {
+  color: green !important;
+}
+
+.heading {
+  color: rgb(71, 70, 67);
+}
+
+#heading {
+  color: teal;
+}

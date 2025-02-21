@@ -1,0 +1,10 @@
+
+/* without box-sizing: width (600px + 10px + 50px) = 660px */
+
+div {
+  width: 600px;
+  border: 10px solid black;
+  padding: 50px;
+
+  box-sizing: border-box;
+}

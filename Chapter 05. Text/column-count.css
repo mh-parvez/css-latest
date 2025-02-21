@@ -1,0 +1,19 @@
+
+.content {
+  width: 400px;
+  border: 2px solid rgb(37, 36, 36);
+
+  column-count: 3;
+  column-gap: 4rem;
+
+  column-rule-width: 3px;
+  column-rule-style: dashed;
+  column-rule-color: goldenrod;
+  column-rule: 3px double rgb(44, 44, 43); /* short-hand */
+
+  column-width: 100px;
+
+  h1 {
+    column-span: all;
+  }
+}

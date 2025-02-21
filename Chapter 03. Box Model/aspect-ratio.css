@@ -1,0 +1,57 @@
+
+/* responsive div */
+.box {
+  margin: 100px auto;
+  padding: 1rem;
+
+  border: 1px dashed rgba(14, 13, 13, 0.322);
+
+  /* width: 200px; */
+  min-width: 200px;
+  max-width: 600px;
+  /* hight handle */
+  aspect-ratio: 1/1;
+
+  /* height: 200px; */
+  /* width handle*/
+  /* aspect-ratio: 2/1; */
+}
+
+
+/* responsive image */
+.img--contianer {
+  width: 400px;
+  border: 2px solid;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img--contianer {
+    width: 100%;
+  }
+}
+
+
+/* responsive youtube video */
+.vedio--contianer {
+  width: 400px;
+  border: 2px solid;
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    /* aspect-ratio: 4/3; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .vedio--contianer {
+    width: 100%;
+  }
+}

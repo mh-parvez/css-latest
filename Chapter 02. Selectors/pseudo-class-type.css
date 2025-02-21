@@ -1,0 +1,52 @@
+
+/*TYPE-PSEUDO-CLASS 
+  :nth-of-type() - parent not required
+  :nth-last-of-type() 
+
+  :only-of-type 
+  :first-of-type
+  :last-of-type
+
+  :empty
+  :not()
+  :lang()
+
+*/
+
+ul>li:nth-of-type(2) {
+  background-color: rgb(211, 205, 205);
+}
+
+ul>li:nth-last-of-type(2) {
+  background-color: rgb(46, 136, 240);
+}
+
+div>span:only-of-type {
+  background-color: red;
+}
+
+ul>li:first-of-type {
+  background-color: red;
+}
+
+ul>li:last-of-type {
+  background-color: rgb(157, 255, 0);
+}
+
+#nothing:empty {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+}
+
+ul>li:not(.without) {
+  background: rgb(37, 190, 32);
+}
+
+p:lang(en) {
+  background-color: brown;
+}
+
+p:lang(fn) {
+  background-color: rgb(120, 42, 165);
+}

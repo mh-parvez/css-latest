@@ -1,0 +1,17 @@
+
+/* list-style: 'list-style-type' 'list-style-position' 'list-style-image' */
+
+ul {
+  background-color: teal;
+
+  list-style-type: circle;
+  list-style-type: "🎯";
+  list-style-position: outside;
+  list-style-image: url(./images/hexagon-list-icon.png);
+  
+  list-style: lower-roman outside url(./images/hexagon-list-icon.png); /* short-hand */
+}
+
+li {
+  background-color: rgb(209, 209, 223);
+}

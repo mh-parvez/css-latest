@@ -1,0 +1,19 @@
+
+/* initial-letter: font-size  sink; */
+
+p {
+  font-family: century;
+  font-size: 1.4em;
+
+  width: 500px;
+  background: gainsboro;
+  padding: 1rem;
+
+  &::first-letter {
+    color: rgb(14, 109, 42);
+    margin-right: .5rem;
+
+    initial-letter: 3 3;
+    /* initial-letter: 3 2; */
+  }
+}

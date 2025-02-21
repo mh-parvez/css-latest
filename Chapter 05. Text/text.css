@@ -1,0 +1,47 @@
+
+/*TEXT-PROPERTIES
+  > text-align
+  > text-align-last
+  > text-transfrom
+  > text-indent
+  > word-spacing
+  > letter-spacing 
+  > text-decoration-line
+  > text-decoration-color
+  > text-decoration-style
+  > text-decoration-thickness
+  > text-underline-offset
+  > word-warp
+  > word-break
+  > text-shadow: h-shodow v-shadow blur-radius color;
+*/
+
+.content {
+  width: 600px;
+  border: 2px solid;
+
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  text-align: left;
+  text-align-last: center;
+  text-transform: lowercase;
+  text-indent: 0rem;
+  word-spacing: normal;
+  letter-spacing: normal;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-color: gray;
+  text-decoration-style: solid;
+
+  text-decoration: underline yellowgreen solid;
+  text-decoration-thickness: 20px;
+  text-underline-offset: 40px;
+
+  text-shadow: -4px 1px 0px rgb(105, 103, 103);
+}

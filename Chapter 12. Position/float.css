@@ -1,0 +1,23 @@
+/*
+<div class="box box-1">1</div>
+<div class="box box-2">2</div>
+<div class="box box-3">3</div> 
+*/
+
+.box {
+  width: 300px;
+  height: 250px;
+  margin: .3rem;
+
+  background-color: rgba(219, 219, 219, 0.61);
+
+  font-size: 5rem;
+  text-align: center;
+  line-height: 250px; /* horizontally center */
+
+  float: left;
+}
+
+.box-2 {
+  float: right;
+}

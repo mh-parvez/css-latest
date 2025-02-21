@@ -1,0 +1,28 @@
+/*HYPHENS:
+  hyphens
+  hyphenate-character
+  hyphenate-limit-chars: chars/ before-char/ after-char;
+
+  values:
+  - none
+  - auto
+  - manual (&shy or &hyphens)
+  <div> Lorem ipsummmmmmmmmmmmmmmmmmm dolor sit &shy am consectetur &hyphens adipisicing elit. </div> 
+*/
+
+.box {
+  width: 300px;
+  height: auto;
+  padding: 1rem;
+
+  font-size: x-large;
+  background: greenyellow;
+
+  hyphens: auto;
+  /* hyphens: none; */
+  /* hyphens: manual; */
+
+  hyphenate-character: "↵";
+  hyphenate-limit-chars: 30;
+  hyphenate-limit-chars: 30 6 3;
+}

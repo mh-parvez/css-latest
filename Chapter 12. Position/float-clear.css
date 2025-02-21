@@ -1,0 +1,24 @@
+
+/*
+<div class="box box-1">lorem..............long content.</div>
+<div class="box box-2">2</div>
+<div class="box box-3">3</div> 
+*/
+
+.box-1 {
+  width: 300px;
+  background-color: burlywood;
+  float: left;
+}
+
+.box-2 {
+  width: 400px;
+  background-color: rgb(135, 209, 222);
+  float: right;
+}
+
+.box-3 {
+  width: 400px;
+  background-color: rgb(214, 25, 56);
+  clear: both;
+}

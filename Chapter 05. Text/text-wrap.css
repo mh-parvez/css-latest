@@ -1,0 +1,20 @@
+
+.container {
+  min-width: 300px;
+  padding-inline: 2em;
+  border: 1px dashed;
+
+  h2 {
+    /* text-wrap: warp; */
+    /* text-wrap: nowrap; */
+    text-wrap: balance;
+    text-align: center;
+  }
+
+  p {
+    /* text-wrap: warp; */
+    /* text-wrap: nowrap; */
+    text-wrap: balance;
+    /* text-align: justify; */
+  }
+}

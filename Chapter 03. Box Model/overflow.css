@@ -1,0 +1,23 @@
+
+/* when height is fixed */
+
+div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+
+  overflow: auto;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: visible; */
+
+  /* overflow-y: auto; */
+  /* overflow-y: hidden; */
+  /* overflow-y: scroll; */
+  /* overflow-y: visible; */
+
+  /* overflow-x: auto; */
+  /* overflow-x: hidden; */
+  /* overflow-x: scroll; */
+  /* overflow-x: visible; */
+}

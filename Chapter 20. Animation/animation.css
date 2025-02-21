@@ -1,0 +1,72 @@
+/*ANIMATION-PROPERTY
+  > animation-name 
+  > animation-duration 
+  > animation-timing-function 
+  > animation-delay 
+  > animation-iteration-count 
+  > animation-direction 
+  > animation-fill-mode
+  > animation-play-state
+  > animation: name duration timing-function delay iteration-count direction fill-mode; //short-hand
+  
+  @keyframes animation-name {
+    from {css properties}
+    to {css properties}
+  }
+  
+  @keyframes animation-name {
+    from {css properties}
+    to {css properties}
+  }
+*/
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+
+  border: 2px solid;
+  border-radius: 40%;
+
+  animation-name: animated-box-2;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes animated-box-1 {
+  from {
+    border-radius: 0;
+    background-color: teal;
+  }
+
+  to {
+    border-radius: 50%;
+    background-color: rgb(85, 10, 134);
+  }
+}
+
+@keyframes animated-box-2 {
+  0% {
+    border-top-right-radius: 65%;
+  }
+
+  50% {
+    border-top-left-radius: 70%;
+  }
+
+  75% {
+    border-bottom-right-radius: 70%;
+  }
+
+  100% {
+    border-bottom-left-radius: 80%;
+  }
+}

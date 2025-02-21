@@ -1,0 +1,39 @@
+
+/*COMBINATORS-SELECTOR
+  > desendant selector
+  > direct child (>)
+  > adjacent silbing (+), select one element
+  > general sibling (~), select all elements
+*/
+
+.box p {
+  color: aliceblue;
+}
+
+div p span {
+  color: aquamarine;
+}
+
+ul > li {
+  color: rebeccapurple;
+}
+
+#box > p {
+  color: black;
+}
+
+#box + p {
+  color: black;
+}
+
+ul + p {
+  color: palegreen;
+}
+
+#box ~ p {
+  color: black;
+}
+
+ul ~ p {
+  color: palegreen;
+}

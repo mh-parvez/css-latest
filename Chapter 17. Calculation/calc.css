@@ -1,0 +1,10 @@
+
+/* calc() : using for any mathmatical calculation [+, *, /, -] with this operators */
+
+.classA {
+  width: calc(100% - 1em);
+}
+
+.classB {
+  width: calc(100% / 2);
+}

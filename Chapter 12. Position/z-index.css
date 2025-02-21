@@ -1,0 +1,36 @@
+
+.box {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+}
+
+.box-1 {
+  background-color: rgba(0, 128, 128, 0.404);
+  border: 1px solid rgba(16, 167, 255, 0.281);
+  backdrop-filter: blur(6px);
+
+  top: 150px;
+  left: 150px;
+  z-index: 2;
+}
+
+.box-2 {
+  background-color: rgba(169, 202, 180, 0.158);
+  border: 1px solid rgba(255, 253, 253, 0.171);
+  backdrop-filter: blur(6px);
+
+  top: 200px;
+  left: 200px;
+  z-index: 75;
+}
+
+.box-3 {
+  background-color: rgba(128, 0, 64, 0.596);
+  border: 1px solid rgba(247, 55, 221, 0.521);
+  backdrop-filter: blur(1px);
+
+  top: 250px;
+  left: 250px;
+  z-index: 13;
+}

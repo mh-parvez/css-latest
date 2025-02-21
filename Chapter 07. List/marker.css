@@ -1,0 +1,11 @@
+
+ul {
+  color: blue;
+
+  li::marker {
+    color: rgb(7, 179, 44);
+
+    font-size: 20px;
+    content: "💡"
+  }
+}

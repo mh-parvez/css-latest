@@ -1,0 +1,33 @@
+
+/* vertical position of content, without flex & grid */
+
+.container {
+  background: #eee;
+  border: 1px ridge goldenrod;
+  padding-inline: 2em;
+  block-size: 300px;
+
+  align-content: center;
+  align-content: end;
+  align-content: start;
+}
+
+div {
+  width: 400x;
+  height: 400px;
+  padding: 1rem;
+  background: rgb(4, 163, 57);
+
+  align-content: center;
+  align-content: start;
+  /* align-content:end; */
+
+  .child-divs {
+    width: 50%;
+    height: 100px;
+    background: rgb(141, 5, 68);
+
+    margin: auto;
+    margin-block: .3em;
+  }
+}

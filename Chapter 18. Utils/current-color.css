@@ -1,0 +1,12 @@
+
+/* inherit parent color */
+
+div {
+  color: rgb(6, 189, 16);
+
+  h1,
+  p {
+    color: currentColor;
+    border: 1px solid currentColor;
+  }
+}

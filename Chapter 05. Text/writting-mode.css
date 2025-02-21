@@ -1,0 +1,11 @@
+
+
+.content {
+  width: 300px;
+
+  writing-mode: horizontal-tb;
+  writing-mode: sideways-lr;
+  writing-mode: sideways-rl;
+  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
+}

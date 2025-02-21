@@ -1,0 +1,27 @@
+
+/* Get attribute value from HTML
+  <button class="btn" data-notification="9">Pick up!</button>
+*/
+
+button {
+  position: relative;
+}
+
+button::before {
+  content: attr(class); /* output: btn */
+  content: attr(data-notification);
+
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+
+  width: 1em;
+  height: 1em;
+
+  background-color: red;
+  color: #ffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

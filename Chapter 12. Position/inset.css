@@ -1,0 +1,39 @@
+/*USE WITH POSITION PROPERTY
+  inset
+  inset-block
+  inset-inline
+  inset-block-start
+  inset-block-end
+  inset-inline-start
+  inset-inline-end
+*/
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgb(30, 15, 46);
+
+  .box {
+    background: rgba(85, 84, 80, 0.801);
+    position: absolute;
+
+    /* inset: 10px 10px 10px 10px; */
+    /* inset: 30px 30px; */
+    /* inset: 50px; */
+    /* inset: 0%; */
+    /* inset: 10%; */
+    /* inset: 20% 30%; */
+    /* inset: 10% 5% 20% 7%; */
+
+    /* inset-block: 10%; */
+    /* inset-block: 10% 10%; */
+    /* inset-inline: 10%; */
+    /* inset-inline: 10% 10%; */
+
+    /* inset-block-start: 25px; */
+    /* inset-block-end: 25px; */
+    /* inset-inline-start: 25px; */
+    inset-inline-end: 25px;
+  }
+}

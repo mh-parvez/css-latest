@@ -1,0 +1,22 @@
+
+/*SCROLLBAR
+  scrollbar-color
+  scrollbar-width
+  scrollbar-gutter
+*/
+
+html {
+  scrollbar-color: rgb(2, 131, 88) rgb(255, 255, 255);
+
+  /* scrollbar-width: none; */
+  /* scrollbar-width: thin; */
+  /* scrollbar-width: auto; */
+
+  /* scrollbar-gutter: auto; */
+  /* scrollbar-gutter: stable; */
+  scrollbar-gutter: stable both-edges;
+
+  p {
+    font-size: 1.5rem;
+  }
+}

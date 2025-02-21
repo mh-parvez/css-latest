@@ -1,0 +1,23 @@
+/*BORDER IMAGE PROPERTY
+  > border-image-source
+  > border-image-slice
+  > border-image-width
+  > border-image-outset
+  > border-image-repeat
+  > border-image 
+*/
+
+div {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+
+  background: turquoise;
+  /* must be set a border */
+  border: 1rem solid;
+
+  border-image-source: url(./images/hexagon-list-icon.png);
+  border-image-slice: 13;
+  border-image-repeat: repeat;
+  border-image-outset: 16px;
+}

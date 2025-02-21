@@ -1,0 +1,28 @@
+
+/* styling parent, when we foucs her child */
+
+form {
+  width: 400px;
+  margin: 100px auto;
+
+  div {
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    border: 1px solid;
+    
+    transition: all .5s;
+
+    &:focus-within {
+      width: 300px;
+      border-radius: 0;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+}

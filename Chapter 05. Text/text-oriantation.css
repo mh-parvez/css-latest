@@ -1,0 +1,12 @@
+
+
+/* it's use with writing-mode: */
+
+.content {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+
+  writing-mode: vertical-lr; 
+  text-orientation: upright;
+}

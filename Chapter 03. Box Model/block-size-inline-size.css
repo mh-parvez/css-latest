@@ -1,0 +1,17 @@
+
+/* alternative of height and width */
+
+.container {
+  background: gold;
+
+  /* block-size: 200px; */
+  /* max-block-size: 400px; */
+  /* min-block-size: 100px; */
+
+  /* inline-size: 200px; */
+  /* max-inline-size: 600px; */
+  /* min-inline-size: 100px; */
+
+  /* writing-mode: vertical-rl; */
+}
+

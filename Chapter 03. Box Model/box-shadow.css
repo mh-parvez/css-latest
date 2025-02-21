@@ -1,0 +1,8 @@
+
+/* box-shadow:  h-offset  v-offset  blur  spread  color; */
+
+div {
+  box-shadow: 2px 3px 10px 3px gainsboro;
+  box-shadow: 2px -3px 10px 3px rgb(4, 138, 131) inset;
+  box-shadow: -2px 3px 70px 15px rgb(24, 85, 216), 10px 33px 110px 33px rgb(1, 161, 201);
+}

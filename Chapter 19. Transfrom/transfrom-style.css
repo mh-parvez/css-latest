@@ -1,0 +1,42 @@
+
+.base {
+  width: 200px;
+  height: 100px;
+
+  margin: 1rem;
+  float: left;
+
+  background-color: rgba(128, 128, 128, 0.589);
+  border-radius: .7rem;
+
+  transform: rotateY(30deg);
+
+  perspective: 800px;
+  perspective-origin: bottom;
+  /* use in parent */
+  transform-style: preserve-3d;
+
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+
+  float: left;
+
+  background-color: rgb(28, 182, 79);
+  border-radius: .7rem;
+
+  transition: all 0.6s;
+
+  font-size: 4rem;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box-1 {
+  &:hover {
+    transform: rotateX(60deg);
+    transform-origin: bottom left;
+  }
+}

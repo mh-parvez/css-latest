@@ -1,0 +1,23 @@
+/* 
+values are fullscreen, minimal-ui, browser
+@media (display-mode: value) { } 
+*/
+
+@media (display-mode: fullscreen) {
+  body {
+    background: gold;
+  }
+}
+
+@media (display-mode: browser) {
+  body {
+    background: orangered;
+  }
+}
+
+/* when it's app mode */
+@media (display-mode: minimal-ui) {
+  body {
+    background: turquoise;
+  }
+}

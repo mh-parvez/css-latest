@@ -1,0 +1,18 @@
+
+/*target-elements:has(search-selector)
+  h1:has(span)
+*/
+
+h1:has(span) {
+  color: rgb(63, 63, 63);
+  background-color: antiquewhite;
+}
+ 
+div:has(h3, h4, h2, p) {
+  color: rgb(29, 28, 28);
+  background-color: rgb(216, 124, 4);
+}
+
+div:has(h2 ~ p) {
+  background: rebeccapurple;
+}

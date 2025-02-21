@@ -1,0 +1,33 @@
+
+/* PRINT MEDIA STYLEING METHODS:
+1. Using link tag
+3. Using @media print
+2. Using @import
+
+<link rel="stylesheet" href="print.css" media="print">
+
+@media print {
+  // styles
+}
+
+@import url('print.css') print; // use !important to override the styles
+*/
+
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+  align-items: center;
+}
+
+@media print {
+  h1 {
+    color: rgb(115, 207, 9);
+  }
+
+  p {
+    color: rgb(0, 255, 213);
+  }
+}

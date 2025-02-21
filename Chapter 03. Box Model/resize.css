@@ -1,0 +1,14 @@
+
+div {
+  width: 200px;
+  height: 200px;
+
+  background-color: rgb(68, 163, 247);
+
+  overflow: auto; /*helping property*/
+  resize: both;
+}
+
+textarea {
+  resize: none;
+}

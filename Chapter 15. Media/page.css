@@ -1,0 +1,35 @@
+
+/*ONLY TWO PROPERTYS WE CAN USE 
+  1. margin - don't use px unit for margin 
+  2. size - paper size 
+    - landscape, portrait
+    - auto
+    - length (custom paper size) A4, A5, A3, B4, B5, JIS-B5, JIS-B4, letter, legal, ledger
+*/
+
+@page {
+  /* margin: 0in; */
+  /* margin: 1in; */
+  margin: 1in 0.5in;
+
+  /* size: landscape; */
+  /* size: A3; */
+  /* size: A3 landscape; */
+  /* size: 3in 8in; */
+}
+
+/* :first class for first page styling*/
+@page :first {
+  margin: 2in 2in;
+  /* size: landscape; */
+}
+
+/* :right class for even number pages styling*/
+@page :right {
+  margin: 3in 1in;
+}
+
+/* :first class for odd number pages styling*/
+@page :left {
+  margin: 4in 20%;
+}

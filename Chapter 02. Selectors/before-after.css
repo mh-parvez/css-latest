@@ -1,0 +1,46 @@
+p::after {
+  content: "author//:mhp";
+  background-color: seagreen;
+}
+
+p::before {
+  content: "author//:mhp";
+  background-color: rgb(139, 46, 134);
+}
+
+button {
+  width: 9rem;
+  height: 3rem;
+
+  position: relative; /* for children absolute */
+  cursor: pointer;
+
+  font-size: 20px;
+  font-family: inherit;
+
+  border: none;
+  border-radius: 30em;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button::before {
+  content: '';
+  width: 0;
+  height: 3rem; /* parent height */
+  border-radius: 30em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+
+  transition: .5s ease;
+  display: block; /* for full width */
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 9em;
+}

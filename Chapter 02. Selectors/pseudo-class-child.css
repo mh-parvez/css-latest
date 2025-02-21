@@ -1,0 +1,53 @@
+
+/*CHILD-PSEUDO-CLASSES
+  :first-child - element must be a child
+  :last-child 
+  
+  :nth-child() 
+  :nth-last-child() - select elements end to start
+
+  :nth-child(2 of .test) 
+  :nth-last-child(2 of .test) - select elements end to start
+
+  :only-child - only child of parent
+*/
+
+ul>li:first-child {
+  background-color: rgb(175, 175, 175);
+}
+
+ul>li:last-child {
+  background-color: rgb(248, 103, 103);
+}
+
+ul>li:nth-child(3) {
+  background: forestgreen;
+}
+
+ul> :nth-child(2n) {
+  background: rgb(228, 31, 166);
+}
+
+ul>li:nth-child(3n - 1) {
+  background: rgb(31, 228, 152);
+}
+
+ul>li:nth-last-child(3n-1) {
+  background: rgb(228, 31, 166);
+}
+
+.parent :nth-child(2 of p)v{
+  border: 0cap;
+}
+
+.parent :nth-child(odd of p)v{
+  border: 0cap;
+}
+
+.parent :nth-child(2n of p)v{
+  border: 0cap;
+}
+
+.parent :nth-child(2n + 1 of p)v{
+  border: 0cap;
+}

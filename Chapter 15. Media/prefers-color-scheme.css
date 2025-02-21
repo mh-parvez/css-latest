@@ -1,0 +1,35 @@
+/* dark & light app mode */
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222831;
+    color: #eeeeee;
+  }
+} */
+
+/* @media (prefers-color-scheme: light) {
+  body {
+    background-color: #eeeeee;
+    color: #222831;
+  }
+} */
+
+:root {
+  --base-color: teal;
+}
+
+body {
+  background-color: var(--base-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-color: seagreen;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --base-color: lime;
+  }
+}

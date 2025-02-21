@@ -1,0 +1,28 @@
+
+/* types of cursor */
+
+.box {
+  width: 200px;
+  height: 200px;
+
+  margin-left: 1rem;
+
+  background-color: blueviolet;
+  float: left;
+}
+
+.box-1 {
+  cursor: alias;
+}
+
+.box-2 {
+  cursor: cell;
+}
+
+.box-3 {
+  cursor: grab;
+}
+
+.box-4 {
+  cursor: text;
+}

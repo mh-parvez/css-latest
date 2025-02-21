@@ -1,0 +1,39 @@
+
+/*ATTRIBUTES-SELECTORS
+  > class/id/tagname[attr]
+  > class/id/tagname[attr = value]
+  > class/id/tagname[attr ^= value] : attribute begin with value
+  > class/id/tagname[attr |= value] : attribute begin with value OR is first in a dash separated list
+  > class/id/tagname[attr $= value] : attribute ends with value
+  > class/id/tagname[attr *= value] : value occurs anywhere in attribute
+  > class/id/tagname[attr ~= value] : value matches attribute in space separated list 
+
+*/
+
+img[title] {
+  object-fit: contain;
+}
+
+input[type='text'] {
+  width: 100%;
+}
+
+img[title ^='profile'] { /* title = "profile picture" */
+  border: 2px solid;
+}
+
+img[title |='profile'] { /* title = "profile-picture" */
+  border: 2px solid;
+}
+
+img[title $='picture'] { /* title = "profile picture" */
+  border: 2px solid;
+}
+
+img[title *='picture'] { /* title = "user profile picture" */
+  border: 2px solid;
+}
+
+img[title ~='picture'] { /* title = "user profile picture" */
+  border: 2px solid;
+}

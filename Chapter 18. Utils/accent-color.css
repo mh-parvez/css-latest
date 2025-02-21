@@ -1,0 +1,8 @@
+
+[type='checkbox'] {
+  accent-color: green;
+}
+
+[type='radio'] {
+  accent-color: rgb(128, 0, 122);
+}

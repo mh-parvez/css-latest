@@ -1,0 +1,10 @@
+
+/* relative path */
+@import "./user-select.css";
+
+/* absolute path using both internal and external file*/
+@import url('./cursor-color.css');
+
+/* path and media (all, print, screen, speech) */
+@import "./printstyle.css" print;
+@import "./printstyle.css" print and (max-width:1020px);

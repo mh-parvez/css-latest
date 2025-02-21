@@ -1,0 +1,23 @@
+
+/* border-style: none, solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, mix */
+
+div {
+  /* border-width: 2px; */
+  /* border-style: solid; */
+  /* border-color: red; */
+
+  /* border: 10px groove rgb(60, 220, 20); */
+
+  /* border-width: 10px 20px 30px 40px; */
+  /* border-style: solid dashed groove inset; */
+  /* border-color: red green burlywood chocolate; */
+
+
+  /* border-inline: 10px solid teal; */
+  /* border-inline-start: 10px solid teal; */
+  /* border-inline-end: 10px solid teal; */
+
+  /* border-block: 10px solid teal; */
+  /* border-block-start: 10px solid teal; */
+  border-block-end: 10px solid teal;
+}

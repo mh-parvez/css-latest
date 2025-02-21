@@ -1,0 +1,41 @@
+
+/*UNITES-CSS
+  > px
+  > % 
+  > em (parent * em)
+  > rem (browser defualt-size or root-size)
+  > vw
+  > vh
+  > vmax
+  > vmin 
+
+  i. absoulute unit (not dependent and they are fixed) for e.g. cm, mm, in, px, pt, pc etc.
+  ii. relative unit (depened others window or parent) for e.g. em, rem, ch, ex, vw, vh etc. */
+
+
+html {
+  font-size: 10px; /* root */
+}
+
+body {
+  font-size: 16px; /* parent */
+}
+
+.container {
+  background-color: rgb(95, 17, 95);
+
+  width: 400px;
+  height: 300px;
+
+  width: 60%;
+  height: 300px;
+
+  font-size: 2em; /* 16px * 2em = 32px  */
+  font-size: 3rem; /* 10px * 3rem = 30px  */
+
+  width: 50vw;
+  height: 40vh;
+
+  width: 70vmax; 
+  height: 80vmin;
+}

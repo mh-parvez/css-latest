@@ -1,0 +1,32 @@
+
+/*CODE
+<div class="container">
+  <h2>Lorem, ipsum dolor.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, veritatis!</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, veritatis!</h3>
+  <h2>Lorem, ipsum dolor.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, veritatis!</h3>
+  <h2>Lorem, ipsum dolor.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, veritatis!</h3>
+</div>
+*/
+
+.container {
+  counter-reset: section-counter; /* h2 parent */
+}
+
+h2 {
+  counter-reset: sub-section-counter; /* h3 parent */
+}
+
+h2::before {
+  content: "Section " counter(section-counter, normal) " : ";
+  counter-increment: section-counter 1;
+  background: gold;
+}
+
+h3::before {
+  content: counter(section-counter, normal) "." counter(sub-section-counter, normal) " : ";
+  counter-increment: sub-section-counter 1;
+  background: gainsboro;
+}

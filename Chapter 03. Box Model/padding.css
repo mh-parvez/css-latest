@@ -1,0 +1,31 @@
+
+div {
+  border: 1px solid;
+
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+
+  /* padding: 100px; */
+  /* padding: 100px 50px; */
+  /* padding: 30px 30px 30px 30px; */
+
+  /* padding-inline: 50px; */
+  /* padding-inline: 50px 10px; */
+  /* padding-inline-start: 40px; */
+  /* padding-inline-end: 40px; */
+
+  /* padding-block: 10px; */
+  /* padding-block: 10px 60px; */
+  /* padding-block-start: 40px; */
+  /* padding-block-end: 40px; */
+
+  p {
+    background: #eee;
+  }
+
+  h2 {
+    background: #eeeeee;
+  }
+}

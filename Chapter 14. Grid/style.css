@@ -1,0 +1,80 @@
+
+/*GRID-PROPERTIES
+
+  display: grid;
+  grid-template-columns: px, %, fr, repeat(), auto
+  grid-template-rows: px, %, fr, repeat(), auto
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-row: 1 2; [short-hand]
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-column: 3 4; [short-hand]
+
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 3;
+
+  gap: units;
+
+  grid-template-columns: [name-start] unit [name-end];
+  grid-template-row: [name-start] unit [name-end];
+  grid-row: name-start / name-end;
+  grid-column: name-start 1 / name-end 3;
+
+  grid-template-areas:
+  "header header header"
+  "nav main main"
+  "nav footer footer";
+
+  grid-area: area-name;
+
+  minmax(min, max);
+  max-content;
+  min-content;
+  auto-fill;
+  auto-fit;
+  fit-content(); [maxwidth]
+  order;
+
+  grid-auto-flow: column;
+  grid-auto-rows: 80px;
+  grid-auto-columns: .5fr;
+
+  align-items: start / end / center / stretch;
+  align-self: start / end / center / stretch;
+  justify-items: start / end / center / stretch;
+  justify-self: start / end / center / stretch;
+
+  place-items: align-items justify-items; [short-hand]
+  place-self: align-self  justify-self; [short-hand]
+
+  align-content: stretch / start / end / center / space-around / space-evenly / space-between;
+  justity-content: stretch / start / end / center / space-around / space-evenly / space-between;
+  place-content: align-content  justity-content; [short-hand]
+
+*/
+
+.container {
+  width: 95%;
+  background-color: rgb(187, 10, 54);
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 100px;
+
+  grid-auto-rows: 80px;
+  grid-auto-flow: row;
+  grid-auto-columns: .5fr;
+
+  gap: .5rem;
+
+  .item {
+    background: rgb(49, 51, 50);
+    color: #eee;
+    font-size: 1.6em;
+  }
+}

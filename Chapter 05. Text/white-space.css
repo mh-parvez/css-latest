@@ -1,0 +1,11 @@
+
+/* white-space: normal | pre | nowrap | pre-wrap | pre-line | break-spaces */
+
+.content {
+  width: 700px;
+  font-size: 1.84rem;
+  background-color: gold;
+
+  white-space: normal;
+  white-space: pre-line;
+}

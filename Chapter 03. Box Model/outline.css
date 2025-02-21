@@ -1,0 +1,21 @@
+
+/* outline-style: none, solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, mix */
+
+div {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: red;
+  outline-offset: 10px;
+}
+
+div {
+  outline-width: 10px 20px 30px 40px;
+  outline-style: solid dashed groove inset;
+  outline-color: red green burlywood chocolate;
+  outline-offset: 30px;
+}
+
+div {
+  outline: 10px groove crimson;
+  outline-offset: 20px;
+}

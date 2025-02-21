@@ -1,0 +1,15 @@
+
+/* text-overflow: clip | ellipsis | <string>] */
+
+.content {
+  width: 600px;
+  font-size: 1.84rem;
+  background-color: gold;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "[]"; /* firefox only */
+}

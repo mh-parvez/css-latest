@@ -1,0 +1,10 @@
+
+html {
+  /* for all elements */
+  scroll-behavior: smooth;
+}
+
+.container {
+  /* only container elements */
+  scroll-behavior: smooth;
+}

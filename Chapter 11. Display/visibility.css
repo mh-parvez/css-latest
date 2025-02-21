@@ -1,0 +1,16 @@
+
+.content {
+  visibility: hidden;
+  visibility: visible;
+}
+
+table {
+
+  .empty-row {
+    visibility: collapse;
+  }
+
+  .empty-column {
+    visibility: collapse;
+  }
+}

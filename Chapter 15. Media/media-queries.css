@@ -1,0 +1,27 @@
+
+/* media-types: all, print, screen, speech */
+
+/* viewport
+  - 1920px
+  - 1440px
+  - 1366px
+  - 1024px
+  - 700-900px
+  - 320-480px
+*/
+
+/* conditional-operator
+  - and
+  - or
+  - not
+*/
+
+body {
+  background-color: tan;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: teal;
+  }
+}

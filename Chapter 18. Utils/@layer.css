@@ -1,0 +1,76 @@
+
+@layer one, three, two;
+/* priority label: right to left */
+
+@layer one {
+
+  /* Selector Specificity: (0, 1, 0) */
+  .paragraph {
+    color: red;
+  }
+}
+
+@layer two {
+
+  /* Selector Specificity: (0, 0, 1) */
+  p {
+    color: rgb(7, 95, 15);
+  }
+}
+
+@layer three {
+
+  /* Selector Specificity: (1, 0, 0) */
+  #paragraph {
+    color: rgb(0, 238, 255);
+  }
+}
+
+
+/* 💡 nested layer */
+
+@layer one.nest-one, one.nest-two;
+/* outside on the parent */
+
+@layer one {
+
+  /* @layer nest-one, nest-two; */
+  /* inside ont the parent */
+
+  @layer nest-one {
+    p {
+      color: antiquewhite;
+    }
+  }
+
+  @layer nest-two {
+    #para {
+      color: aliceblue;
+    }
+  }
+}
+
+
+/* 💡 as a layer, add external file */
+
+@layer one-inside, three-inside, two-external;
+/* must be top of the file*/
+/* layer two import and naming*/
+@import url(css/externalStyle.css) layer(two-external);
+
+@layer one-inside {}
+
+@layer three-inside {}
+
+
+/* 💡 example of css layers  */
+
+@layer reset {}
+
+@layer theme {}
+
+@layer layout {}
+
+@layer components {}
+
+@layer utilities {}

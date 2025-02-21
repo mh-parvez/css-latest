@@ -1,0 +1,14 @@
+
+/*When we break the code like this!
+  <span>Lorem ipsum dolor sit <br> amet consectetur <br>adipisicing elit. <br>Fuga, ipsa? </span> 
+*/
+
+span {
+  border: 1px solid red;
+  border-radius: 10px;
+  line-height: 50px;
+  padding: .5rem;
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

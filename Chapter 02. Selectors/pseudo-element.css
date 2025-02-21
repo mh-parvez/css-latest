@@ -1,0 +1,33 @@
+
+/*PSEUDO-ELEMENTS
+  ::first-letter
+  ::first-line
+  ::selection
+  ::placeholder
+  ::-webkit-file-upload-button
+*/
+
+p {
+  &::first-letter {
+    color: rgb(23, 187, 64);
+    font-size: 1.9rem;
+  }
+
+  &::first-line {
+    font-weight: 600;
+  }
+
+  &::selection {
+    background: rgb(63, 205, 82);
+  }
+}
+
+input::placeholder {
+  color: black;
+  font-family: 'Trebuchet MS';
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: aqua;
+  padding: .3rem .5rem;
+}

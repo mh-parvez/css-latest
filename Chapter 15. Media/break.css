@@ -1,0 +1,20 @@
+
+/* use with print media
+  - break-before 
+  - break-after
+  - break-inside, when content overflow on 2 pages.
+*/
+
+h2 {
+  break-after: page;
+  /* break-before: page; */
+}
+
+.content {
+  /* break-after: page; */
+  break-before: page;
+}
+
+table {
+  break-inside: avoid;
+}

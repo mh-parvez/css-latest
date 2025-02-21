@@ -1,0 +1,68 @@
+
+/*FORM-PSEUDO-CLASS
+  :focus
+  :checked
+  :disabled
+  :enabled
+  :required
+  :optional
+  :in-range
+  :out-of-range
+  :read-only
+  :read-write
+  :valid
+  :invalid
+  :default
+  :placeholder-shown
+*/
+
+input[type='text']:focus {
+  border: 2px solid rgb(230, 88, 88);
+}
+
+input[type='checkbox']:checked+label {
+  color: rgb(48, 100, 255);
+}
+
+input[type='text']:disabled {
+  border: 1px solid rgb(230, 202, 88);
+}
+
+input[type='text']:enabled {
+  border: 1px solid rgb(52, 91, 246);
+}
+
+input[type='text']:enabled {
+  border: 1px solid rgb(230, 88, 88);
+}
+
+input[type='text']:optional {
+  border: 1px solid rgb(203, 31, 219);
+}
+
+input[type='number']:in-range {
+  background-color: rgb(255, 255, 255);
+}
+
+input[type='number']:out-of-range {
+  background-color: rgb(236, 48, 48);
+}
+
+input[type='number']:read-only {
+  background-color: rgb(0, 136, 70);
+}
+
+input[type='email']:invalid {
+  background-color: rgb(0, 136, 70);
+}
+
+input[type='checkbox']:default {
+  color: rgb(48, 100, 255);
+}
+
+input[type='text']:placeholder-shown {
+  color: rgb(248, 14, 14);
+  background-color: rgba(54, 243, 139, 0.548);
+  padding: 3px;
+  border-radius: .2rem;
+}

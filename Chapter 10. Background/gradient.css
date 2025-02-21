@@ -1,0 +1,29 @@
+.container {
+  width: 400px;
+  height: 300px;
+
+  background-image: linear-gradient(45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(281deg 100% 21%) 8%,
+      hsl(304deg 100% 23%) 17%,
+      hsl(319deg 100% 30%) 25%,
+      hsl(329deg 100% 36%) 33%,
+      hsl(336deg 100% 41%) 42%,
+      hsl(346deg 83% 51%) 50%,
+      hsl(3deg 95% 61%) 58%,
+      hsl(17deg 100% 59%) 67%,
+      hsl(30deg 100% 55%) 75%,
+      hsl(40deg 100% 50%) 83%,
+      hsl(48deg 100% 50%) 92%,
+      hsl(55deg 100% 50%) 100%);
+
+  background-image: linear-gradient(45deg,
+      hsl(240deg 92% 20%) 0%,
+      hsl(219deg 100% 28%) 14%,
+      hsl(211deg 100% 35%) 29%,
+      hsl(203deg 100% 38%) 43%,
+      hsl(193deg 100% 38%) 57%,
+      hsl(178deg 100% 37%) 71%,
+      hsl(164deg 100% 43%) 86%,
+      hsl(135deg 90% 67%) 100%);
+}

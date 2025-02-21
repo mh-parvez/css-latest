@@ -1,0 +1,33 @@
+
+.container {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+
+  background: url(./images/banner.png) no-repeat center;
+  background-size: contain;
+
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+
+  .filterbox {
+    width: 300px;
+    height: 200px;
+    padding: 1em;
+    
+    font-family: 'Trebuchet MS';
+
+    border: 1.5px dashed #ffffff42;
+    border-radius: 1rem;
+
+    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(250%);
+    backdrop-filter: contrast(30%);
+    backdrop-filter: hue-rotate(360deg);
+    backdrop-filter: invert(80%);
+    backdrop-filter: sepia(80%);
+    backdrop-filter: saturate(80%);
+    backdrop-filter: blur(9px) saturate(80%); /* multiple */
+  }
+}

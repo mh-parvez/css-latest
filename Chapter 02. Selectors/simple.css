@@ -1,0 +1,32 @@
+
+/*SIMPLE-SELECTOR
+  > type
+  > class
+  > id
+  > universal
+*/
+
+div {
+  width: 100px;
+  height: 70px;
+}
+
+.container {
+  width: 100px;
+  height: 70px;
+}
+
+#logo {
+  width: 100px;
+  height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container * {
+  color: aliceblue;
+}

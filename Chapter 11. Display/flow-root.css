@@ -1,0 +1,22 @@
+
+/* HTML
+  <div id="parent">
+    <div id="child"></div>
+    <p>Lorem ipsum dolor sit amet consectetur unit.</p>
+  </div>
+*/
+
+#parent {
+  width: 600px;
+  border: 2px solid;
+
+  display: flow-root;
+}
+
+#child {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(25, 207, 80);
+
+  float: left;
+}

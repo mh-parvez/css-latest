@@ -1,0 +1,24 @@
+
+/*CLIP-PATH
+  > circle
+  > ellipse
+  > inset
+  > polygon
+*/
+
+img {
+  clip-path: circle(40% at 50% 50%);
+
+  shape-outside: circle(40% at 50% 50%);
+  shape-margin: 3rem;
+}
+
+box {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(8, 85, 85);
+
+  clip-path: circle(40% at 50% 50%);
+}
+
+/* use any website for better shape */
