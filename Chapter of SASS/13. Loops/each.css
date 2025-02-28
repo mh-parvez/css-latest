@@ -1,0 +1,23 @@
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btn-secondary {
+  background-color: gray;
+}
+
+.btn-danger {
+  background-color: red;
+}

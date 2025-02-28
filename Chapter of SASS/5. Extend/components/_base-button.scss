@@ -1,0 +1,17 @@
+
+// define a base style, for reusable button styles, and extend it to create two different button styles.
+// This is a more efficient way to create reusable styles than using mixins.
+
+%button-base {
+  display: inline-block;
+  padding: 16px 20px;
+
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}

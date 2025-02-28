@@ -1,0 +1,73 @@
+
+// With @content, mixins can accept entire blocks of styles.
+
+@mixin custom-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+
+  @content; // This will be replaced by custom styles
+}
+
+.btn {
+  @include custom-button {
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+
+// 📌 Example: Responsive Media Queries
+@mixin responsive($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+.card {
+  width: 400px;
+
+  @include responsive(600px) {
+    width: 100%;
+  }
+}
+
+
+// 📌 Example: Custom Animations
+@mixin animate($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include animate(fadeIn) {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+// 📌 Example: Theming System
+@mixin theme($mode) {
+  @if $mode ==dark {
+    background-color: black;
+    color: white;
+  }
+
+  @else {
+    background-color: white;
+    color: black;
+  }
+
+  @content;
+}
+
+.container {
+  @include theme(dark) {
+    border: 2px solid gray;
+  }
+}

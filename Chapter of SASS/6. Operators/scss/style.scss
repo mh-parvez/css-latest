@@ -1,0 +1,31 @@
+
+$width: 250px;
+$height: $width / 2;
+
+$font-size: 16px;
+$font-size-lg: $font-size * 1.5;
+$font-size-xl: $font-size-lg * 1.5;
+$font-size-xxl: $font-size-xl * 2.5;
+
+.box {
+  width: $width;
+  height: $height;
+
+  background: seagreen;
+  font-size: $font-size-xxl;
+  line-height: $height;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@if $font-size-xxl >= 50px {
+  .box-1 {
+    background: tomato;
+  }
+}
+
+@if $font-size != 1em  and $font-size- != 16px {
+  .box-2 {
+    background: rgb(50, 127, 204);
+  }
+}

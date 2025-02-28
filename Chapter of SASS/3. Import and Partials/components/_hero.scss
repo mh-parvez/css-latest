@@ -1,0 +1,32 @@
+/* Hero Section */
+.hero {
+  background: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1600&h=900&fit=crop) no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.cta-button {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}

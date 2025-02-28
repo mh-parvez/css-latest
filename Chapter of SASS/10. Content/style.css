@@ -1,0 +1,30 @@
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card {
+  width: 400px;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  background-color: black;
+  color: white;
+  border: 2px solid gray;
+}

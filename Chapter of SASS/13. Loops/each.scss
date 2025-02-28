@@ -1,0 +1,26 @@
+
+// 📌 @each Loop (Loop Through Lists or Maps)
+
+
+// 🚀 Example: Looping Through a List 
+$colors: red, blue, green;
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+
+// 🚀 Example: Looping Through a Map
+$theme-colors: (
+  primary: blue,
+  secondary: gray,
+  danger: red
+);
+
+@each $name, $color in $theme-colors {
+  .btn-#{$name} {
+    background-color: $color;
+  }
+}

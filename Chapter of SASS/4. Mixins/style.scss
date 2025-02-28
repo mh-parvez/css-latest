@@ -1,0 +1,18 @@
+
+@import 'mixin';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button-primary {
+  @include button(#007bff, #fff);
+}
+
+.button-secondary {
+  @include button(#6c757d, #fff);
+}
+
+.flex-container {
+  @include flex-center;
+}

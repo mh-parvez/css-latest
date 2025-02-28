@@ -1,0 +1,44 @@
+
+// Define a base color
+$primary-color: #3498db; // A blue shade
+
+// Color Adjustment Functions
+$lighten-color: lighten($primary-color, 20%); // Lighter shade
+$darken-color: darken($primary-color, 20%); // Darker shade
+$saturate-color: saturate($primary-color, 30%); // More saturation
+$desaturate-color: desaturate($primary-color, 30%); // Less saturation
+$adjust-hue-color: adjust-hue($primary-color, 40deg); // Rotate hue
+
+// Opacity Functions
+$opacify-color: opacify(rgba($primary-color, 0.5), 0.3); // Increase opacity
+$transparentize-color: transparentize(rgba($primary-color, 0.8), 0.3); // Decrease opacity
+
+// Mixing Colors
+$mixed-color: mix($primary-color, #ff0000, 50%); // Mix blue and red
+
+// Color Modification Functions
+$changed-color: change-color($primary-color, $red: 200); // Change red component
+$adjusted-color: adjust-color($primary-color, $lightness: 10%); // Increase lightness
+
+// Extracting Color Components
+$red-value: red($primary-color); // Extract red component
+$green-value: green($primary-color); // Extract green component
+$blue-value: blue($primary-color); // Extract blue component
+$hue-value: hue($primary-color); // Extract hue value
+$saturation-value: saturation($primary-color); // Extract saturation value
+$lightness-value: lightness($primary-color); // Extract lightness value
+$alpha-value: alpha(rgba($primary-color, 0.6)); // Extract alpha (opacity)
+
+// Creating Colors
+$rgb-color: rgb(255, 87, 51); // Create RGB color
+$rgba-color: rgba(255, 87, 51, 0.5); // Create RGB with opacity
+$hsl-color: hsl(14, 100%, 60%); // Create HSL color
+$hsla-color: hsla(14, 100%, 60%, 0.5); // Create HSL with opacity
+
+// Example usage in a CSS class
+.button {
+  background: $lighten-color;
+  color: $darken-color;
+  border: 2px solid $mixed-color;
+  opacity: $alpha-value;
+}

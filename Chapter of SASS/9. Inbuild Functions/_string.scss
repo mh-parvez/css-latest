@@ -1,0 +1,16 @@
+
+// 1. String Length & Extraction
+$length: str-length("Hello"); // Output: 5
+$index: str-index("Hello, World!", "World"); // Output: 8
+$slice: str-slice("Sass", 2, 3); // Output: "as"
+
+// 2. String Manipulation
+$uppercase: to-upper-case("sass"); // Output: "SASS"
+$lowercase: to-lower-case("SASS"); // Output: "sass"
+$unique: unique-id(); // Output: "u1a2b3c4" (random unique ID)
+
+// 3. String Combination
+$quoted: quote(Hello); // Output: '"Hello"'
+$unquoted: unquote('"Hello"'); // Output: Hello
+$inserted: str-insert("Hello", "Sass ", 1); // Output: "Sass Hello"
+$replaced: str-replace("Hello World", "World", "Sass"); // Output: "Hello Sass"

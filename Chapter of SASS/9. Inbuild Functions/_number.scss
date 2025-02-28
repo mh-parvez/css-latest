@@ -1,0 +1,31 @@
+
+@function strip-unit($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function rem($px, $base: 16px) {
+  @return $px / $base * 1rem;
+}
+
+$abs: abs(-20); // 20
+$ceil: ceil(10.5); // 11
+$floor: floor(10.5); // 10
+$round: round(10.5); // 11
+$min: min(10, 20, 30); // 10
+$max: max(10, 20, 30); // 30
+$random: random(100) / 100; // Generates a decimal between 0 and 1
+
+$unit: unit(10px); // "px"
+$unitless: unitless(10px); // false
+$percentage: percentage(0.1); // 10%
+$clamp: clamp(15, 10, 20); // 15
+$comparable: comparable(10px, 20px); // true
+
+$rem: rem(10px); // 0.625rem
+$strip_unit: strip-unit(10px); // 10
+
+.test {
+  margin: #{$abs}px;
+  font-size: #{$ceil}px;
+  padding: #{$clamp}px;
+}

@@ -1,0 +1,52 @@
+/* SCSS Animation with Variables, Mixins, Functions, and Conditional Logic */
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$animation-duration: 2s;
+$size: 50px;
+$large: true; // Toggle for large effect
+
+// Function to calculate size
+@function dynamic-size($value) {
+  @if $large {
+    @return $value * 3;
+  }
+
+  @else {
+    @return $value * 2;
+  }
+}
+
+// Mixin for animation
+@mixin bounce-effect($duration) {
+  animation: bounce $duration infinite ease-in-out;
+}
+
+// Keyframes for animation
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+// Applying styles
+.bouncing-box {
+  width: dynamic-size($size);
+  height: dynamic-size($size);
+  background-color: if($large, $primary-color, $secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: if($large, 2rem, 1.5rem);
+  font-weight: bold;
+  @include bounce-effect($animation-duration);
+}

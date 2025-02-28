@@ -1,0 +1,119 @@
+// Introspection functions in SCSS allow you to inspect and manipulate data types dynamically. 
+// They are useful when working with mixins,functions, and conditionally applying styles.
+
+// 1. type-of($value) → Get the Data Type
+$color: blue;
+$size: 20px;
+$text: "Hello";
+$numbers: (
+  10,
+  20,
+  30
+);
+
+$type1: type-of($color); // "color"
+$type2: type-of($size); // "number"
+$type3: type-of($text); // "string"
+$type4: type-of($numbers); // "list"
+
+
+// 2. unit($number) → Get the Unit of a Number
+$size: 16px;
+$percent: 50%;
+
+$unit1: unit($size); // "px"
+$unit2: unit($percent); // "%"
+$unit3: unit(10); // "" (empty string, no unit)
+
+
+// 3. unitless($number) → Check if a Number is Unitless
+$value1: 10px;
+$value2: 5;
+
+$is-unitless1: unitless($value1); // false
+$is-unitless2: unitless($value2); // true
+
+
+// 4. comparable($number1, $number2) → Check if Two Numbers are Comparable
+$width: 10px;
+$height: 5em;
+$size: 15px;
+
+$can-compare1: comparable($width, $size); // true (both in "px")
+$can-compare2: comparable($width, $height); // false (px vs em)
+
+
+// 5. call($function, $args...) → Call a Function Dynamically
+@function double($num) {
+  @return $num * 2;
+}
+
+$dynamic-call: call(double, 5); // 10
+
+
+// 6. get-function($name, $module) → Get a Function by Name
+@function add($a, $b) {
+  @return $a +$b;
+}
+
+$fn: get-function("add");
+$result: call($fn, 3, 7); // 10
+
+
+// 7. minxins-exists($name) → Check if a Mixin Exists
+@mixin apply-size($value) {
+  font-size: $value;
+}
+
+$has-mixin1: mixin-exists("apply-size"); // true
+$has-mixin2: mixin-exists("unknown-mixin"); // false
+
+
+// 8. variable-exists($name) → Check if a Variable Exists
+$color: red;
+$has-color: variable-exists("color"); // true
+$has-size: variable-exists("size"); // false
+
+
+// 9. global-variable-exists($name) → Check if a Global Variable Exists
+$color: red !global;
+$has-color: global-variable-exists("color"); // true
+$has-size: global-variable-exists("size"); // false
+
+
+// 10. function-exists($name) → Check if a Function Exists
+@function double($num) {
+  @return $num * 2;
+}
+$has-fn1: function-exists("double"); // true
+$has-fn2: function-exists("unknown-fn"); // false
+
+
+// 11. inspect($value) → Inspect the Value
+$value: inspect(10px); // 10px
+$list: inspect((10, 20, 30)); // (10, 20, 30)
+$map: inspect(("key": "value")); // ("key": "value")
+
+
+// 📌 Real-World Use Case: Type-Safe Mixin
+@mixin apply-size($value) {
+  @if type-of($value)=="number" and unitless($value) {
+    font-size: #{$value}px;
+  }
+
+  @else if type-of($value)=="number" {
+    font-size: $value;
+  }
+
+  @else {
+    @error "Invalid value: #{$value}";
+  }
+}
+
+.text1 {
+  @include apply-size(16); // Outputs: font-size: 16px;
+}
+
+.text2 {
+  @include apply-size(18em); // Outputs: font-size: 18em;
+}

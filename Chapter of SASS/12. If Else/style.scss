@@ -1,0 +1,28 @@
+
+$theme: dark;
+
+body {
+  @if $theme ==dark {
+    background-color: black;
+    color: white;
+  }
+}
+
+@mixin text-style($weight) {
+  @if $weight ==bold {
+    font-weight: 700;
+  }
+
+  @else if $weight ==medium {
+    font-weight: 500;
+  }
+
+  @else {
+    font-weight: 300;
+  }
+}
+
+p {
+  @include text-style(bold);
+}
+

@@ -1,0 +1,39 @@
+
+$btn-name: "primary";
+
+.btn-#{ $btn-name } {
+  background-color: blue;
+  color: white;
+}
+
+
+$box-no: 1;
+
+.box-#{ $box-no } {
+  background-color: red;
+}
+
+
+$property: "margin";
+$size: 10px;
+
+.box {
+  #{ $property }-top: $size;
+}
+
+
+$base-color: red;
+$opacity: 0.5;
+
+.alert {
+  background-color: #{ $base-color };
+  opacity: #{ $opacity };
+}
+
+$breakpoint: 768px;
+
+@media (max-width: #{ $breakpoint }) {
+  .responsive {
+    display: none;
+  }
+}

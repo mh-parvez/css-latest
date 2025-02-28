@@ -1,0 +1,36 @@
+.navbar {
+  background: #333;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  background: blue;
+  color: white;
+  padding: 10px;
+}
+.button:hover {
+  background: darkblue;
+}
+.button:active {
+  background: navy;
+}
+
+.container {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}

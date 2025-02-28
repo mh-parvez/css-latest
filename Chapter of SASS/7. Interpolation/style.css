@@ -1,0 +1,23 @@
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.box-1 {
+  background-color: red;
+}
+
+.box {
+  margin-top: 10px;
+}
+
+.alert {
+  background-color: red;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .responsive {
+    display: none;
+  }
+}

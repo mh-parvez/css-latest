@@ -1,0 +1,67 @@
+.card {
+  width: 400px;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.box {
+  width: 300px;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+  }
+}
+
+.button {
+  font-size: 16px;
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .button {
+    font-size: 18px;
+  }
+}
+
+.container {
+  color: blue;
+}
+.box {
+  color: red;
+}
+
+.card {
+  background: lightgray;
+}
+@media (max-width: 600px) {
+  .card {
+    background: darkgray;
+  }
+}
+
+.container {
+  padding: 20px;
+}
+.child {
+  margin: 10px;
+}
+
+.container {
+  color: black;
+}
+@media (max-width: 600px) {
+  .container {
+    color: gray;
+  }
+}

@@ -1,0 +1,154 @@
+
+// 1️. map-get($map, $key) → Get Value by Key
+$colors: (
+  primary: blue,
+  secondary: green,
+  danger: red
+);
+
+$primary-color: map-get($colors, primary); // blue
+
+.button {
+  background-color: $primary-color;
+}
+
+
+// 2. map-has-key($map, $key) → Check Key Existence
+$fonts: (
+  body: Arial,
+  heading: Helvetica
+);
+
+$has-heading: map-has-key($fonts, heading); // true
+$has-mono: map-has-key($fonts, monospace); // false
+
+
+// 3. map-keys($map) → Get All Keys
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 1024px
+);
+
+$keys: map-keys($breakpoints); // (small, medium, large)
+
+
+// 4. map-values($map) → Get All Values
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 1024px
+);
+
+$values: map-values($breakpoints); // (576px, 768px, 1024px)
+
+
+// 5. map-merge($map1, $map2) → Merge Maps
+$base-colors: (
+  primary: blue,
+  secondary: green
+);
+
+$extra-colors: (
+  danger: red,
+  success: limegreen
+);
+
+$merged-colors: map-merge($base-colors, $extra-colors); // Result: (primary: blue, secondary: green, danger: red, success: limegreen)
+
+
+// 6. map-remove($map, $key) → Remove Key-Value Pair
+$shadows: (
+  small: 0 1px 2px rgba(0, 0, 0, 0.1),
+  medium: 0 2px 4px rgba(0, 0, 0, 0.1),
+  large: 0 4px 8px rgba(0, 0, 0, 0.1)
+);
+
+$without-large: map-remove($shadows, large); // Result: (small: 2px 2px 5px gray, medium: 4px 4px 10px gray)
+
+
+// 7. map-length($map) → Get Length of Map
+$grid-columns: (
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16
+);
+
+$total-columns: map-length($grid-columns); // 4
+
+
+// 8. map-deep-get($map, $keys...) → Get Nested Value
+$theme: (
+  colors: (
+    primary: blue,
+    secondary: green
+  ),
+  typography: (
+    font-size: 16px,
+    line-height: 1.5
+  )
+);
+
+$primary-color: map-deep-get($theme, colors, primary); // blue
+$font-size: map-deep-get($theme, typography, font-size); // 16px
+
+
+// 9. map-deep-merge($map1, $map2) → Deep Merge Maps
+$default-settings: (
+  colors: (
+    primary: blue,
+    secondary: green
+  ),
+  spacing: (
+    small: 8px,
+    large: 16px
+  )
+);
+
+$custom-settings: (
+  colors: (
+    primary: darkblue
+  ),
+  spacing: (
+    medium: 12px
+  )
+);
+
+$final-settings: map-deep-merge($default-settings, $custom-settings);
+
+/* Result:
+(
+  colors: (
+    primary: darkblue,
+    secondary: green
+  ),
+  spacing: (
+    small: 8px,
+    medium: 12px,
+    large: 16px
+  )
+)
+*/
+
+
+// 📌 Real-World Use Case: Create a dynamic theme generator using maps and mixins.
+$themes: (
+  light: (background: white,
+    text: black),
+  dark: (background: black,
+    text: white)
+);
+
+@mixin theme-styles($theme-name) {
+  $theme: map-get($themes, $theme-name);
+
+  body {
+    background-color: map-get($theme, background);
+    color: map-get($theme, text);
+  }
+}
+
+// Apply theme dynamically
+@include theme-styles(light);
+@include theme-styles(dark);

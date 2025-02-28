@@ -1,0 +1,29 @@
+
+$combined: selector-append('.btn', ':hover'); // Output: .btn:hover
+$nested: selector-append('.card', '.title'); // Output: .card.title
+
+$nested: selector-nest('.menu', 'li', 'a'); // Output: .menu li a
+$nested2: selector-nest('.card', '.header', '.title'); // Output: .card .header .title
+
+$modified: selector-replace('.btn.primary', '.primary', '.secondary'); // Output: .btn.secondary
+
+$extended: selector-extend('.alert', '.alert', '.notification'); // Output: .notification
+
+$unified: selector-unify('.btn.primary', '.btn'); // Output: .btn.primary
+
+$check: is-superselector('.menu', '.menu li'); // Output: true
+$check2: is-superselector('.card .header', '.card'); // Output: false
+
+$split: simple-selectors('.btn.primary.large'); // Output: .btn, .primary, .large
+
+$base-selector: '.card';
+$child: selector-append($base-selector, '.header');
+$nested: selector-nest($base-selector, '.content');
+
+#{$child} {
+  font-weight: bold; // .card.header { font-weight: bold; }
+}
+
+#{$nested} {
+  padding: 10px; // .card .content { padding: 10px; }
+}

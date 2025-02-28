@@ -1,0 +1,13 @@
+@import "./components/base-button";
+
+.button-primary {
+  @extend %button-base;
+  background-color: blue;
+  color: white;
+}
+
+.button-secondary {
+  @extend %button-base;
+  background-color: gray;
+  color: black;
+}

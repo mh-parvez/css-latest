@@ -1,0 +1,50 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.button-primary {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.button-primary:hover {
+  background-color: #0062cc;
+}
+.button-primary:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button-secondary {
+  display: inline-block;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.button-secondary:hover {
+  background-color: #545b62;
+}
+.button-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

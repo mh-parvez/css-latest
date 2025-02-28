@@ -1,0 +1,49 @@
+
+// The @at-root directive in SCSS removes nested selectors or media queries from their current hierarchy and moves them to the root level of the compiled CSS. This is useful when you need to break out of nesting while keeping the SCSS structure clean and maintainable.
+
+.container {
+  color: blue;
+
+  @at-root .box {
+    color: red;
+  }
+}
+
+
+// 📌 Using @at-root with Media Queries
+.card {
+  background: lightgray;
+
+  @at-root {
+    @media (max-width: 600px) {
+      .card {
+        background: darkgray;
+      }
+    }
+  }
+}
+
+
+// 📌 Controlling @at-root with without: and with:
+.container {
+  padding: 20px;
+
+  @at-root (without: rule) {
+    .child {
+      margin: 10px;
+    }
+  }
+}
+
+// 🚀 @at-root (with: media) → Only Move Media Queries
+.container {
+  color: black;
+
+  @at-root (with: media) {
+    @media (max-width: 600px) {
+      .container {
+        color: gray;
+      }
+    }
+  }
+}

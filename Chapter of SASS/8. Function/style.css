@@ -1,0 +1,22 @@
+/* SCSS Animation with Variables, Mixins, Functions, and Conditional Logic */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+.bouncing-box {
+  width: 150px;
+  height: 150px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: bounce 2s infinite ease-in-out;
+}

@@ -1,0 +1,46 @@
+
+.card {
+  width: 400px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+
+// 📌 Using Variables in Media Queries
+$mobile: 600px;
+
+.container {
+  padding: 20px;
+
+  @media (max-width: $mobile) {
+    padding: 10px;
+  }
+}
+
+
+// 📌 Media Queries Inside a Mixin
+@mixin responsive($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+.box {
+  width: 300px;
+
+  @include responsive(500px) {
+    width: 100%;
+  }
+}
+
+
+// 📌 Multiple Media Conditions
+.button {
+  font-size: 16px;
+
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 18px;
+  }
+}

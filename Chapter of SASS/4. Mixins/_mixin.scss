@@ -1,0 +1,29 @@
+
+@mixin button($bg-color: #3498db, $text-color: #fff, $padding: 10px 20px, $border-radius: 5px) {
+  display: inline-block;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba($bg-color, 0.5);
+  }
+}
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

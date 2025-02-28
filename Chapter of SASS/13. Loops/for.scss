@@ -1,0 +1,15 @@
+
+// 🚀 Example: Generate Multiple Classes
+
+@for $i from 1 through 5 {
+  .box-#{$i} {
+    width: $i * 20px;
+  }
+}
+
+
+@for $i from 1 to 5 { // Excludes 5
+  .item-#{$i} {
+    margin: $i * 5px;
+  }
+}

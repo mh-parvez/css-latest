@@ -1,0 +1,102 @@
+/* General Styles */
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  background: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1600&h=900&fit=crop) no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.cta-button {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  margin: 20px;
+  padding: 20px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}

@@ -1,0 +1,33 @@
+
+$list: 10px 20px 30px 40px; //creates a list
+$list: 10px, 20px, 30px, 40px; // creates a list
+
+$colors: (
+  red,
+  blue,
+  green
+);
+
+// Get the length
+$len: length($colors); // Output: 3
+
+// Get an item by index
+$second-color: nth($colors, 2); // Output: blue
+
+// Add an item at the end
+$extended-colors: append($colors, yellow); // Output: (red, blue, green, yellow)
+
+// Merge two lists
+$more-colors: join($colors, (pink, purple)); // Output: (red, blue, green, pink, purple)
+
+// Replace an item
+$updated-colors: set-nth($colors, 2, cyan); // Output: (red, cyan, green)
+
+// Remove an item
+$filtered-colors: remove-nth($colors, 1); // Output: (blue, green)
+
+// Get index of an item
+$index-blue: index($colors, blue); // Output: 2
+
+// Check if a list is bracketed
+$is-bracketed: is-bracketed([1, 2, 3]); // Output: true
